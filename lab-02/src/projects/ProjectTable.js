@@ -4,11 +4,9 @@ import { Table } from 'react-bootstrap';
 import ProjectRow from './ProjectRow';
 
 class ProjectTable extends React.Component {
-  // TODO Implement
-
   render() {
     const { projects } = this.props;
-  
+
     return (
       <Table bordered striped>
         <thead>
@@ -25,16 +23,14 @@ class ProjectTable extends React.Component {
       </Table>
     );
   }
-
 }
-
 
 ProjectTable.defaultProps = {
   projects: []
 };
 
 ProjectTable.propTypes = {
-  projects: PropTypes.array
+  projects: PropTypes.array.isRequired
 };
 
 export default ProjectTable;
